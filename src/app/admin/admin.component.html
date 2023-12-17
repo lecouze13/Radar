@@ -1,0 +1,17 @@
+<!-- Affichage conditionnel des composants -->
+<div *ngIf="isLogin===false">
+    <app-login (loginSuccess)="onLoginSuccess($event)"></app-login>
+</div>
+<div *ngIf="showRegister">
+    <app-register></app-register>
+</div>
+
+<div *ngIf="isLogin===false">
+
+    <!-- <button (click)="toggleList()">Listez les Utilisateurs</button> -->
+    <button (click)="toggleRegister()">Créer un compte</button>
+
+    <!-- <div *ngIf="showUser===true">
+        <app-contact-tab></app-contact-tab>
+    </div> -->
+</div>

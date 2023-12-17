@@ -1,0 +1,13 @@
+   /* Personnalisation du style */
+   .navbar-custom {
+       padding-top: 0.5rem;
+       padding-bottom: 0.5rem;
+   }
+
+   .navbar-brand {
+       margin-right: auto;
+   }
+
+   .navbar-nav {
+       margin-left: auto;
+   }
