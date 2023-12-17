@@ -18,7 +18,9 @@
                                 [(ngModel)]="password" required>
                         </div>
                         <div *ngIf="loginError" class="text-danger mb-3">{{ loginError }}</div>
-                        <button type="submit" class="btn btn-primary">Se connecter</button>
+                        <div class="mb-3 d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary">Se connecter</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -31,7 +33,7 @@
                         <label for="otp">Entrez votre OTP :</label>
                         <input type="text" id="otp" name="otp" class="form-control" [(ngModel)]="otp" required>
                     </div>
-                    <div *ngIf="loginError" class="text-danger mb-3">{{ loginError }}</div>
+                    <div *ngIf="OTPError" class="text-danger mb-3">{{ OTPError }}</div>
                     <button (click)="SendOTP()" class="btn btn-primary">Valider OTP</button>
                 </div>
             </div>

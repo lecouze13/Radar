@@ -12,9 +12,13 @@ export class LoginComponent {
   username: string = '';
   password: string = '';
   loginError: string = '';
+  OTPError: string = '';
+
   isOTPSend: boolean = false;
   reponseidLogin: string = '';
   @Output() loginSuccess = new EventEmitter<boolean>()
+  @Output() isOTPSendEvent = new EventEmitter<boolean>()
+
   otp: string = '';
   constructor(private http: HttpClient) { }
 
@@ -33,7 +37,7 @@ export class LoginComponent {
           response => {
             this.isOTPSend = true;
             this.reponseidLogin = response;
-            console.log(response);
+            this.isOTPSendEvent.emit(true);
 
 
 
@@ -41,8 +45,7 @@ export class LoginComponent {
 
           },
           error => {
-            console.error(error); // Affichage de l'erreur dans la console
-            this.loginError = 'Erreur lors de la connexion. Veuillez réessayer.'; // Message d'erreur pour l'utilisateur
+            this.loginError = error.error.error; // Message d'erreur pour l'utilisateur
           }
         );
     } else {
@@ -58,11 +61,9 @@ export class LoginComponent {
       .subscribe(
         response => {
           this.loginSuccess.emit(true);
-          console.log(response);
         },
         error => {
-          console.error(error);
-          this.loginError = 'Erreur lors de la connexion. Veuillez réessayer.';
+          this.OTPError = error.error.error;
         }
       );
   }

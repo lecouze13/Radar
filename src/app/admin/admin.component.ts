@@ -8,21 +8,22 @@ import { Component } from '@angular/core';
 export class AdminComponent {
   showUser: boolean = false;
   showRegister: boolean = false;
-
+  showLogin: boolean = false;
   showButtonLogin: boolean = true;
   showButtonRegister: boolean = true;
   isLogin: boolean = false;
-
+  isOTPSendEvent2: boolean = false;
 
   onLoginSuccess(event: boolean): void {
     this.isLogin = event;
   }
+  isOTPSendEvent(event: boolean): void {
+    this.isOTPSendEvent2 = event;
+  }
 
   showAdmin: boolean = false;
 
-  toggleList(): void {
-    this.showUser = !this.showUser;
-  }
+
 
   toggleRegister(): void {
     this.showRegister = !this.showRegister;
