@@ -1,2 +1,27 @@
+<div *ngIf="bouton_choix">
+    <div class="d-flex justify-content-center" *ngIf="affiche_choix">
+      <select id="departement" class="form-select me-2" [(ngModel)]="selectedDepartment">
+        <option value="">Sélectionner un département</option>
+        <option *ngFor="let dept of departements" [value]="dept.code">{{ dept.nom }} ({{ dept.code }})</option>
+      </select>
+      <button class="btn btn-primary" (click)="chargementMAPChoice()">Valider</button>
+    </div>
+    
+<div>
+    <body id="mapContentContainer" onload="chargementMAP()"*ngIf="!affiche_choix"></body>
+</div>
 
-<body id="mapContentContainer" onload="chargementMAP()"></body>
+</div>
+  
+<div *ngIf="!bouton_choix" class="options">
+    <div class="option" (click)="gps()">
+      <span class="option-icon">Icône ici</span>
+      <span class="option-label">Position GPS</span>
+    </div>
+    <div class="option" (click)="Dselection()">
+      <span class="option-icon">Icône ici</span>
+      <span class="option-label">Département Sélection</span>
+    </div>
+  </div>
+  
+  

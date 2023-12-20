@@ -7,8 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
-import { ContactComponent } from './contact/contact.component';
-import { ContactTabComponent } from './contact-tab/contact-tab.component';
+
 import { HeaderComponent } from './header/header.component';
 import { AdminComponent } from './admin/admin.component';
 import { MatTableModule } from '@angular/material/table';
@@ -34,8 +33,7 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    ContactComponent,
-    ContactTabComponent,
+
     HeaderComponent,
     AdminComponent,
     MapComponent
