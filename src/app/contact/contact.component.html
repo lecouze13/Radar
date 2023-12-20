@@ -1,0 +1,29 @@
+<!-- contact.component.html -->
+
+<div>
+    <h2>Ajouter un contact</h2>
+    <form (ngSubmit)="onSubmit()">
+        <div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" [(ngModel)]="newContact.nom" required>
+        </div>
+        <div>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" [(ngModel)]="newContact.prenom" required>
+        </div>
+        <div>
+            <label for="Telephone">Téléphone :</label>
+            <input type="text" id="Telephone" name="Telephone" [(ngModel)]="newContact.Telephone" required>
+        </div>
+        <div>
+            <label for="Email">Email :</label>
+            <input type="email" id="Email" name="Email" [(ngModel)]="newContact.Email" required>
+        </div>
+        <div>
+            <label for="Adresse">Adresse :</label>
+            <input type="text" id="Adresse" name="Adresse" [(ngModel)]="newContact.Adresse" required>
+        </div>
+
+        <button type="submit">Ajouter le contact</button>
+    </form>
+</div>
