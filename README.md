@@ -51,3 +51,22 @@ Si vous souhaitez contribuer à ce projet, veuillez consulter les directives de 
 Remarques
 
 N'hésitez pas à explorer le code source pour mieux comprendre son fonctionnement ou à ajouter de nouvelles fonctionnalités. Pour toute question ou suggestion, veuillez ouvrir une nouvelle issue.
+
+## Installation du back-end
+
+Ouvrir un autre termianl en plus du terminal frontend
+
+```bash
+cd my-app
+```
+Puis installer les dependances suivante 
+```bash
+
+pip install flask flask_cors pandas folium geocoder requests
+```
+## lancement  du back-end
+
+```bash
+python app.py
+```
+
