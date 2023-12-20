@@ -1,0 +1,22 @@
+<!-- Fichier test.html vide -->
+<div id="contentContainer"></div>
+
+<script>
+  // Fonction pour effectuer la requête GET
+  function fetchMapHTML() {
+    fetch('http://127.0.0.1:5000/generate_map')
+      .then(response => response.text())
+      .then(data => {
+        const contentContainer = document.getElementById('contentContainer');
+        if (contentContainer) {
+          contentContainer.innerHTML = data.map_html;
+        }
+      })
+      .catch(error => {
+        console.error('Erreur lors de la récupération du code HTML :', error);
+      });
+  }
+
+  // Appeler la fonction pour effectuer la requête au chargement de la page
+  window.onload = fetchMapHTML;
+</script>
