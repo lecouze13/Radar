@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
@@ -6,31 +7,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent {
-  showUser: boolean = false;
-  showRegister: boolean = false;
-  showLogin: boolean = false;
-  showButtonLogin: boolean = true;
-  showButtonRegister: boolean = true;
+ 
+
   isLogin: boolean = false;
   isOTPSendEvent2: boolean = false;
 
+  swapLoginResiter :boolean = false;
+  constructor(private router: Router) {}
+
   onLoginSuccess(event: boolean): void {
     this.isLogin = event;
+    this.router.navigate(['/map']); // Assure-toi que 'map' est le chemin configuré pour ton composant Map
+
   }
   isOTPSendEvent(event: boolean): void {
     this.isOTPSendEvent2 = event;
   }
 
-  showAdmin: boolean = false;
-
-
-
-  toggleRegister(): void {
-    this.showRegister = !this.showRegister;
-
+  toggleView() {
+    this.swapLoginResiter = !this.swapLoginResiter; // Inverse la valeur entre true et false
   }
-  toggleAdmin(): void {
-    this.showAdmin = !this.showAdmin;
 
-  }
+
+
 }

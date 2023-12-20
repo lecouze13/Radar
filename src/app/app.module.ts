@@ -15,6 +15,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MapComponent } from './map/map.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   imports: [
@@ -24,7 +26,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatSortModule,
     MatTableModule,
     MatPaginatorModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
+
   ],
   declarations: [
     AppComponent,
@@ -33,7 +37,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactComponent,
     ContactTabComponent,
     HeaderComponent,
-    AdminComponent
+    AdminComponent,
+    MapComponent
   ],
   bootstrap: [AppComponent]
 })
