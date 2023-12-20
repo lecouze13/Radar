@@ -54,7 +54,7 @@ N'hésitez pas à explorer le code source pour mieux comprendre son fonctionneme
 
 ## Installation du back-end
 
-Ouvrir un autre termianl en plus du terminal frontend
+Ouvrir un autre terminall en plus du terminal front-end
 
 ```bash
 cd my-app
