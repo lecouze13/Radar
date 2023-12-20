@@ -10,6 +10,8 @@ Ce projet vise à créer une application de radar pour visualiser des données s
 
 Avant de démarrer, assurez-vous d'avoir Node.js et npm installés sur votre machine. De plus, pour exécuter ce projet, Angular CLI doit être installé. Si ce n'est pas le cas, vous pouvez l'installer globalement en utilisant la commande suivante :
 
+
+
 ```bash
 npm install -g @angular/cli
 ```
@@ -46,11 +48,6 @@ ng serve
 ```
 Cela démarrera le serveur de développement. Ouvrez votre navigateur et accédez à http://localhost:4200/ pour voir l'application Radar en action.
 Contribution
-
-Si vous souhaitez contribuer à ce projet, veuillez consulter les directives de contribution dans le fichier CONTRIBUTING.md.
-Remarques
-
-N'hésitez pas à explorer le code source pour mieux comprendre son fonctionnement ou à ajouter de nouvelles fonctionnalités. Pour toute question ou suggestion, veuillez ouvrir une nouvelle issue.
 
 ## Installation du back-end
 
