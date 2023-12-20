@@ -17,10 +17,8 @@ npm install -g @angular/cli
 ## Installation
 
 Pour obtenir une copie du projet sur votre machine locale, suivez ces étapes :
-
-    Clonez le dépôt depuis GitHub :
-
-    ```bash
+Clonez le dépôt depuis GitHub :
+```bash
 
 git clone https://github.com/lecouze13/Radar.git
 ```
