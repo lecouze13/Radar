@@ -1,31 +1,55 @@
-<<<<<<< HEAD
-# Radar
-=======
-# MeteoFrontend
+# Projet Radar
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+Ce projet est une application Radar développée avec Angular.
 
-## Development server
+## Introduction
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ce projet vise à créer une application de radar pour visualiser des données spécifiques de manière conviviale et interactive.
 
-## Code scaffolding
+## Prérequis
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Avant de démarrer, assurez-vous d'avoir Node.js et npm installés sur votre machine. De plus, pour exécuter ce projet, Angular CLI doit être installé. Si ce n'est pas le cas, vous pouvez l'installer globalement en utilisant la commande suivante :
 
-## Build
+```bash
+npm install -g @angular/cli
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+Pour obtenir une copie du projet sur votre machine locale, suivez ces étapes :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    Clonez le dépôt depuis GitHub :
 
-## Running end-to-end tests
+    ```bash
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+git clone https://github.com/lecouze13/Radar.git
+```
+Accédez au répertoire du projet :
 
-## Further help
+```bash
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
->>>>>>> origin/master
+cd Radar
+```
+Installez les dépendances nécessaires à l'aide de npm :
+
+
+```bash
+
+    npm install
+```
+## Lancement de l'application
+
+Une fois les dépendances installées, lancez l'application avec Angular CLI. Utilisez la commande suivante :
+
+
+```bash
+
+ng serve
+```
+Cela démarrera le serveur de développement. Ouvrez votre navigateur et accédez à http://localhost:4200/ pour voir l'application Radar en action.
+Contribution
+
+Si vous souhaitez contribuer à ce projet, veuillez consulter les directives de contribution dans le fichier CONTRIBUTING.md.
+Remarques
+
+N'hésitez pas à explorer le code source pour mieux comprendre son fonctionnement ou à ajouter de nouvelles fonctionnalités. Pour toute question ou suggestion, veuillez ouvrir une nouvelle issue.
